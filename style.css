@@ -1,0 +1,162 @@
+/*setting font for the whole webpage*/
+* {
+    font-family: Arial;
+    
+}
+
+/*styling header*/
+.my-header{
+  background-color: orangered;
+  color: white;
+  text-align: center;
+}
+
+/*styling album visual section*/
+.album-visuals{
+  text-align: center;
+  background-color: darkgray;
+}
+
+/*styling request form*/
+.request-form{
+  text-align: center;
+  background-color: orangered;
+  color: white;
+}
+
+/*adjusting the position of the pic*/
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*styling the album detail section*/
+.album-details{
+  background-color: darkgray;
+  text-align: center;
+}
+
+/*stying paragrahin general*/
+p{
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*styling the request form list*/
+.request-form li {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;               
+    margin-bottom: 15px;
+}
+
+/*styking the label of the request form*/
+.request-form li label {
+    width: 120px;            
+    text-align: right;      
+    font-size: 18px;
+}
+
+/*styking the inout box within the reques form*/
+.input-box {
+    width: 250px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/*styling the submit button*/
+#submit-btn {
+    display: block !important; /*added !important so that this change would be reflected for sure*/
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 10px 20px;
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*styling the color of button when a mouse hover it*/
+#submit-btn:hover {
+    background-color: black;
+}
+
+/*stylinh h2 in general*/
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*styling the album detal section*/
+.detail-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+/*styling the detal labels*/
+.detail-label {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+/*styling the box that appears when a mouse havors certain texts*/
+.info-box {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute; /*to put a box where I want to no matter element there is on the webpage*/
+    left: 0;
+    width: 200px;
+    padding: 5px;
+    background-color: orangered;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*styling the footer*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/*adjusting all the styles for smaller screens*/
+@media (max-width: 600px) {
+    p{
+    font-size: 16px;
+    }
+
+    .request-form li {
+        gap: 5px;  
+        margin-bottom: 5px;             
+    }
+
+    .request-form li label {
+        width: 120px;                 
+        font-size: 16px;
+    }
+
+    h2{
+        margin-top: 20px;
+    }
+
+    .detail-label {
+        font-size: 20px;
+    }
+
+    .info-box {
+        font-size: 12px;
+    }
+}

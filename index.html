@@ -1,0 +1,82 @@
+<!--creating a webpage using html-->
+<!DOCTYPE html>
+
+<!--using English to compose this website-->
+<html lang="en">
+    <head>
+        <!--adding title to the webpage-->
+        <title>New Album Order Request</title>
+
+        <!-- link to Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+
+        <!--connecting the this html file with style.css file-->
+        <link rel="stylesheet" href="/style.css" />
+
+    </head>
+    <body>
+        <header class="my-header">
+            <!--introduction of what this webpage is about-->
+            <h1>Stray Kids New Album Has Been Released!</h1>
+            <p>This is the page where you can submit an order request for the Stray Kids new album "This & That"</p>
+        </header>
+        <main>
+            <article>
+                <!--section shows the visal for the album-->
+                <section class="album-visuals">
+                    <h2>This is the visual for the new album!</h2>
+                    <img src = '/This&That Pic.webp' alt = "Image of the Stray Kids new album" width = "50%">
+                </section>
+                <!--section that allw users to submit an order request-->
+                <section class="request-form">
+                    <h2>Send an order request!</h2>
+                    <!--where users input their information-->
+                    <ul>
+                        <li><label>Name</label><input type="text" class="input-box"></li>
+                        <li><label>Email Address</label><input type="text" class="input-box"></li>
+                        <li><label>Address</label><input type="text" class="input-box"></li>
+                        <li><label>Card Number</label><input type="text" class="input-box"></li>
+                    </ul>
+                    <!--button to complete the submission-->
+                    <button id="submit-btn">Submit</button>
+                </section>
+                <!--mentions about detailed infomation about the album-->
+                <section class="album-details">
+                    <h2>Details About Albums</h2>
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <div class="info-box">Released on August 7th</div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Price</span>
+                        <div class="info-box">$20.00</div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Track List</span>
+                        <div class="info-box">
+                            <ul>
+                                <li>RUN IT</li>
+                                <li>This & That</li>
+                                <li>After you</li>
+                                <li>FARMING</li>
+                                <li>I Do</li>
+                                <li>Way Out</li>
+                                <li>Back Then</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <!--footer for people who want to know more about artist itself-->
+            <h2>Wanna know more about Stray Kids?</h2>
+            <a href = 'https://straykids.jype.com/' >Click Here to Learn More About Them!</a>
+        </footer>
+        <!--connecting html file with js file-->
+        <script src="/script.js"></script>
+    </body>
+</html>
